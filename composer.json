@@ -1,0 +1,18 @@
+{
+    "name": "martindill/calculo-dias-uteis",
+    "description": "Calcula quantidade de dias \u0000teis em um intervalo de datas, considerando feriados nacionais",
+    "autoload": {
+        "psr-4": {
+            "Martindill\\CalculoDiasUteis\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin Dill",
+            "email": "martinandredill@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
