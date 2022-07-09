@@ -5,9 +5,11 @@ namespace Martindill\CalculoDiasUteis;
 class Calcular
 {
 
-    public static function diasUteis($dataInicial, $dataFinal) {
+    public static function diasUteis($dataInicial, $dataFinal, $feriados=null) {
         $diasUteis = [1, 2, 3, 4, 5]; //segunda a sexta
-        $feriados = ['*-11-02', '*-11-15'];
+        if (is_null($feriados)) {
+            $feriados = ['*-11-02', '*-11-15'];
+        }
 
         $dtInicial = new \DateTime($dataInicial);
         $dtFinal = new \DateTime($dataFinal);
